@@ -5,7 +5,7 @@ Gpc is a tool that you can create to personal password list.
 ## Installation
 1. Install the [GO](https://go.dev/doc/install)
 
-2. ```bash git clone https://github.com/yavuzkanat/GPC.git ```
+2. ```bash git clone https://github.com/yavuzkanat/Gpc.git ```
 
 
 ## Usage 
