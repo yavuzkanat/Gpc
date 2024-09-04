@@ -9,7 +9,7 @@ Gpc is a tool that you can create to personal password list.
 
 
 ## Usage 
-There are two different mode as output and print.
+There are **two** different mode as output and print.
 ```bash
 cd  GPC/
 go run main.go -h
@@ -23,7 +23,7 @@ it's give the output all that you create.
 İt saves to **wordlist.txt** 
 
 ### -p flag (print)
-it's print the output without saved. 
+it's print the output **without** saved. 
 
 ## Contributing
 
