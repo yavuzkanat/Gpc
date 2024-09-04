@@ -1,0 +1,16 @@
+Get infos as argvs √
+Mixer the world infos WORKİN ON ! 
+Make a percent bar 
+Add speacil chrs √
+Output as a TXT 
+Error handlings
+Remocve vowels and mixed √
+Debug the projects
+Add readme.md , licanse 
+Add tags
+
+
+
+ALGORİTHM of the script
+
+use the flags --->get infos --> create the passord list --> write output as txt  
