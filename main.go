@@ -155,6 +155,8 @@ func main()  {
 
 			appfuncs.OutputAsTXT(alldata4)
 		}
+	}else if !*runner{
+		flag.Usage()
 	}
 
 }

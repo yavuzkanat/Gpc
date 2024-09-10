@@ -36,5 +36,10 @@ Please make sure to update tests as appropriate.
 ## Disclaimer 
 Any actions and or activities related to the material contained within this repository is solely your responsibility. The misuse of the tools in this repo could result in criminal charges being brought against the persons in question. The author will not be held responsible in the event any criminal charges are brought against any individuals misusing the tools in this repository for mailicious ourposes or to break the law.
 
+### Versions 
+
+* Version 0.5
+* Release 
+
 
 
