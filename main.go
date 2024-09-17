@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"gpcpacks/appfuncs"
 	"gpcpacks/userfuncs"
+	"os"
 
-	
 )
 
 
@@ -20,7 +20,12 @@ func main()  {
 	vowels := flag.Bool("v",false,"it's remove the vowels chars.")
 	flag.Parse()
 
+
 	if *runner {
+		if !(*output || *print){
+			fmt.Println("Please check your flags (go run main.go -r -p or go run main.go -r -o)")
+			os.Exit(1)
+		}
 		data := userfuncs.GetUserDatas()
 		basic := appfuncs.TwoWordComb(data)
 		basic2  := appfuncs.ThreeWordComb(data)
@@ -28,6 +33,7 @@ func main()  {
 		specials2 := appfuncs.SpecialThreeWordComb(data)
 		Unvowels := appfuncs.RemovedVowelsTwoWordComb(data)
 		Unvowles2 := appfuncs.RemovedVowelsThreeWordComb(data)
+
 		
 		if *print && *basics {
 			for _, v := range basic {
@@ -157,6 +163,7 @@ func main()  {
 		}
 	}else if !*runner{
 		flag.Usage()
+
 	}
 
 }
