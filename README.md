@@ -38,10 +38,10 @@ Any actions and or activities related to the material contained within this repo
 
 ### Versions 
 
-* Version 0.5
+## Version 0.5
 * Release 
 
-* Version 0.6
-* Fixed the problem of helper menu .
+## Version 0.6
+* Fixed the problem of helper menu.
 
 
