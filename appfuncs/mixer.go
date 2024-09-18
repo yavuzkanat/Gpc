@@ -185,6 +185,7 @@ func RemovedVowelsTwoWordComb(data userfuncs.PersonalInfos) []string {
 		ListMixer = append(ListMixer, Sp8)
 
 	}
+
 	return ListMixer
 }
 func RemovedVowelsThreeWordComb(data userfuncs.PersonalInfos) []string {
@@ -196,11 +197,19 @@ func RemovedVowelsThreeWordComb(data userfuncs.PersonalInfos) []string {
 		Sp10 := fmt.Sprintf("%s%s%s",value2,userfuncs.RemoveTheVowels(data.Name),userfuncs.RemoveTheVowels(data.Surname))
 		Sp102 := fmt.Sprintf("%s%s%s",value2,data.Name,userfuncs.RemoveTheVowels(data.Surname))
 		Sp11 := fmt.Sprintf("%s%s%s",data.Name,value2,userfuncs.RemoveTheVowels(data.Surname))
+		Sp111 := fmt.Sprintf("%s%s%s",data.Surname,userfuncs.RemoveTheVowels(data.Name),value2)
+		Sp112 := fmt.Sprintf("%s%s%s",data.Surname,value2,userfuncs.RemoveTheVowels(data.Name))
+		Sp113 := fmt.Sprintf("%s%s%s",value2,data.Surname,userfuncs.RemoveTheVowels(data.Name))
+		
+		//append the list 
 		ListMixer = append(ListMixer, Sp9)
 		ListMixer = append(ListMixer, Sp92)
 		ListMixer = append(ListMixer, Sp10)
 		ListMixer = append(ListMixer, Sp102)
 		ListMixer = append(ListMixer, Sp11)
+		ListMixer = append(ListMixer, Sp111)
+		ListMixer = append(ListMixer, Sp112)
+		ListMixer = append(ListMixer, Sp113)
 
 		
 		
