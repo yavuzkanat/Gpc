@@ -2,7 +2,7 @@ package appfuncs
 
 import (
 	"fmt"
-	"strings"
+
 )
 
 
@@ -37,13 +37,24 @@ func AddtoSpecialChrs(word string) []string {
 
 //Remove the vowels from the word  and return a array 
 func RemoveTheVowels(word string) string {
-	Arr := strings.Split(word,"")
-	for c, v := range Arr {
-		for _, i := range Vowels {
-			if v == string(rune(i)){
-				Arr = append(Arr[:c], Arr[c+1:]... )
+		// Sesli harflerin ASCII değerlerini bir harita olarak tanımlıyoruz
+		sesliHarfler := map[byte]bool{
+			'a': true, 'e': true, 'i': true, 'o': true, 'u': true,
+			'A': true, 'E': true, 'I': true, 'O': true, 'U': true,
+			'ö': true, 'Ö': true, 'ü': true, 'Ü': true, 
+		}
+	
+		// Sonuç kelimesini oluşturmak için bir slice tanımlıyoruz
+		var sonuc []byte
+	
+		// Kelimeyi karakter karakter dolaşıyoruz
+		for i := 0; i < len(word); i++ {
+			if !sesliHarfler[word[i]] { // Eğer harf sesli değilse
+				sonuc = append(sonuc, word[i]) // Slice'a ekle
 			}
 		}
-	} 
-	return strings.Join(Arr,"")
-}
+	
+		// Slice'ı string olarak döndür
+		return string(sonuc)
+	}
+	
